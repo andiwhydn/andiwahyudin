@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+html, body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding: 0;
+    margin: 0;
+    background: #f4f4f4;
+    overflow-x: hidden; /* Menghilangkan scroll horizontal */
+}
+
+body {
+    padding: 0 30px; /* Padding untuk desktop */
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 0 15px; /* Padding lebih kecil untuk layar mobile */
+    }
+}
+
+/* Centering the image inside a box with a black border */
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 180px; /* Adjust the width as needed */
+    height: 180px; /* Adjust the height as needed */
+    border: 2px solid #000; /* Black border */
+    margin: 20px auto; /* Center the container horizontally */
+    overflow: hidden; /* Ensure the image doesn't overflow the container */
+    position: relative;
+    z-index: 10; /* Make sure this is on top of the background image */
+    margin-top: 160px;
+}
+
+.image-container img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+}
+
+p.desc {
+    margin-top: -15px;
+    margin-bottom: 30px;
+}
+
+h1, p.desc {
+    text-align: center;
+    justify-content: center;
+}
+
+.center-text {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.center-text a {
+    text-decoration: none;
+    color: black;
+    margin: 0 10px; /* Mengatur jarak antar link */
+}
+
+.line {
+    border-bottom: 1px solid #888;
+}
+
+h2 {
+    margin-top: 30px;
+}
+
+.image-bg {
+    width: 100vw; /* Lebar penuh viewport */
+    margin-left: calc(-50vw + 50%); /* Menyelaraskan dengan margin kiri negatif */
+    margin-right: calc(-50vw + 50%); /* Menyelaraskan dengan margin kanan negatif */
+    position: absolute; /* Position absolute to place it behind other elements */
+    top: 0;
+    left: 0;
+    z-index: 1; /* Lower z-index to make it behind other elements */
+    overflow: hidden;
+}
+
+.image-bg .bgimg {
+    width: 100%;
+    height: auto;
+    display: block;
+    border: 2px solid #000;
+}
+
+/* Menyesuaikan margin untuk layar desktop */
+@media (min-width: 601px) {
+    .image-container {
+        margin-top: 450px; /* Sesuaikan nilai ini untuk menurunkan posisi elemen di layar desktop */
+    }
+
+    h1, p.desc, .center-text, .line, h2, p {
+        margin-top: /* Sesuaikan nilai ini untuk menurunkan posisi teks di layar desktop */
+    }
+}
+.button-container {
+    position: relative;
+    width: 100%;
+    height: 5vh; /* Memenuhi tinggi viewport */
+    margin-bottom: 40px;
+}
+
+.button {
+    background-color: #04AA6D; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.button5 {
+    background-color: white;
+    color: black;
+    border: 2px solid #555555;
+}
+.text-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+.right-text:hover {
+	cursor: pointer;
+	}
+</style>
+</head>
+<body>
+
+<div class="image-bg">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAsYD2dyJcz5fqsxG8e19gvmglXXVnzYJRWOPP8e5wE9LjoiHsbGwpd4RI&s=10" alt="Deskripsi gambar" class="bgimg">
+</div>
+
+<div class="image-container">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUy9s7L2aRDadM1KxmVNkNQ9Edar2APzIeHw&usqp=CAU" alt="Deskripsi gambar">
+</div>
+
+<h1>Andi Wahyudin</h1>
+<p class="desc">Hi, I'm a digital marketing enthusiast &#128075;, with over 3 years of experience in SEO. Let me show you why you should hire me.</p>
+<div class="center-text">
+    <a href="mailto:email@example.com">Email</a> &bull;
+    <a href="https://wa.me/1234567890">WhatsApp</a> &bull;
+    <a href="https://www.linkedin.com/in/username">LinkedIn</a>
+</div>
+<hr>
+<h2 style="text-align:center;margin-top:30px">Table of Contents</h2>
+<p style="text-align:center"><a href="#section1">What can I do for you?</a></p>
+<p style="text-align:center;margin-top:-10px"><a href="#section2">Why you should choose me?</a></p>
+<p style="text-align:center;margin-top:-10px"><a href="#section3">Are you in doubt?</a></p>
+<p style="text-align:center;margin-bottom:30px;margin-top:-10px"><a href="#section4">What they're saying?</a></p>
+<hr>
+<h2 id="section1">What can I do for you?</h2>
+<p style="margin-top:-8px">Do you need someone who can increase your traffic or visibility? You are in the right place.</p>
+<h3>Marketing Management</h3>
+<p>I am able to do search engine optimization either with a team or individually.</p>
+<h3>Search Engine Optimization</h3>
+<p>I am able to do search engine optimization either with a team or individually.</p>
+<h3>Social Media Marketing</h3>
+<p style="margin-bottom:30px">I am able to do search engine optimization either with a team or individually.</p>
+<hr>
+<h2 id="section2">Why should you choose me?</h2>
+<p style="margin-top:-8px;margin-bottom:30px">I am able to do search engine optimization either with a team or individually.</p>
+<hr>
+<h2 id="section3">Are you in doubt?</h2>
+<p style="margin-top:-8px;margin-bottom:30px">Let's see what I have accomplished and how they were achieved.</p>
+<hr>
+<h2 id="section4">What they're saying?</h2>
+<p style="margin-top:-8px;margin-bottom:30px">Let's see what I have accomplished and how they were achieved.</p>
+<hr>
+<h2 id="section5" style="text-align:center">Lets achieve your business goals with me</h2>
+<p style="text-align:center;margin-top:-8px;margin-bottom:30px">Let's see what I have accomplished and how they were achieved. As easy as click below!</p>
+<div class="button-container">
+    <button class="button button5">Contact me</button>
+</div>
+<hr>
+<div class="text-container">
+    <div class="left-text">&#169; 2024</div>
+    <div class="right-text" onclick='window.scrollTo({top: 0});'>Go up</div>
+</div>
+</body>
+</html>
